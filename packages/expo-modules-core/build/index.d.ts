@@ -22,6 +22,7 @@ export * from './TypedArrays.types';
 export declare const SyntheticPlatformEmitter: import("react-native").DeviceEventEmitterStatic;
 export * from './PermissionsInterface';
 export * from './PermissionsHook';
+export * from './EventEmitterHook';
 export * from './Refs';
 export * from './hooks/useReleasingSharedObject';
 export * from './reload';
