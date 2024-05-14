@@ -24,6 +24,7 @@ export * from './TypedArrays.types';
 export const SyntheticPlatformEmitter = DeviceEventEmitter;
 export * from './PermissionsInterface';
 export * from './PermissionsHook';
+export * from './EventEmitterHook';
 export * from './Refs';
 export * from './hooks/useReleasingSharedObject';
 export * from './reload';

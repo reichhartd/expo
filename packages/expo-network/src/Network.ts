@@ -1,5 +1,4 @@
-import { type Subscription, UnavailabilityError } from 'expo-modules-core';
-import { useEffect, useState } from 'react';
+import { type Subscription, UnavailabilityError, createEventEmitterHook } from 'expo-modules-core';
 
 import ExpoNetwork from './ExpoNetwork';
 import { NetworkState, NetworkStateEvent, NetworkStateType } from './Network.types';
@@ -110,14 +109,8 @@ export function addNetworkStateListener(
  *
  * @return The current network state of the device, including connectivity and type.
  */
-export function useNetworkState(): NetworkState {
-  const [networkState, setNetworkState] = useState<NetworkState>({});
-
-  useEffect(() => {
-    getNetworkStateAsync().then(setNetworkState);
-    const listener = addNetworkStateListener((networkState) => setNetworkState(networkState));
-    return () => listener.remove();
-  }, []);
-
-  return networkState;
-}
+export const useNetworkState = createEventEmitterHook<NetworkState>({
+  addListener: addNetworkStateListener,
+  getInitialStateAsync: getNetworkStateAsync,
+  emptyState: {},
+});
