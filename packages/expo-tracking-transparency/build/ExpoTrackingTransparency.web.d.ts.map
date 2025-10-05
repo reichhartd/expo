@@ -1,1 +1,1 @@
-{"version":3,"file":"ExpoTrackingTransparency.web.d.ts","sourceRoot":"","sources":["../src/ExpoTrackingTransparency.web.ts"],"names":[],"mappings":";mBACiB,OAAO;wBAGF,MAAM;;AAJ5B,wBAOE"}
+{"version":3,"file":"ExpoTrackingTransparency.web.d.ts","sourceRoot":"","sources":["../src/ExpoTrackingTransparency.web.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAoB,MAAM,mBAAmB,CAAC;;mBAUxD,OAAO;2BAGO,OAAO,CAAC,kBAAkB,CAAC;+BAGvB,OAAO,CAAC,kBAAkB,CAAC;wBAGxC,MAAM;;AAV5B,wBAaE"}
